@@ -1,0 +1,8 @@
+/env
+/.idea
+/project/__pycache__/
+/datacenter/__pycache__/
+/datacenter/migrations/__pycache__/
+.replit
+poetry.lock
+pyproject.toml
