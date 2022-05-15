@@ -45,5 +45,6 @@ class Visit(models.Model):
         return int(time_in_storage.total_seconds())
 
     @staticmethod
-    def is_long(duration, minutes=60):
-        return duration >= minutes * 60     # convert duration to seconds
+    def is_long(duration, sentinel_duration_in_min=60):
+        sentinel_duration_in_sec = sentinel_duration_in_min * 60
+        return duration >= sentinel_duration_in_sec
