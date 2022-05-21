@@ -11,14 +11,16 @@
 офиса):
 
 ```dotenv
-ENGINE=
-HOST=
-PORT=
-NAME=
+DB_ENGINE=
+DB_HOST=
+DB_PORT=
+DB_NAME=
 DB_USER=
-PASSWORD=
+DB_PASSWORD=
+DB_URL=
 SECRET_KEY=
-DEBUG=False
+DEBUG=
+ALLOWED_HOSTS=
 ```
 
 Python3 должен быть уже установлен. Затем используйте pip (или pip3, есть конфликт с Python2) для установки зависимостей:
@@ -36,7 +38,7 @@ python3 -m venv env
 **Для запуска проекта:**
 
 ```shell
-python manage.py runserver 0.0.0.0:8000
+python manage.py runserver localhost:8000
 ```
 
 ## Цель проекта
