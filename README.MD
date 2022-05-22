@@ -11,15 +11,14 @@
 офиса):
 
 ```dotenv
-DB_ENGINE=
 DB_HOST=
 DB_PORT=
 DB_NAME=
 DB_USER=
 DB_PASSWORD=
-DB_URL=
+DB_URL=postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}
 SECRET_KEY=
-DEBUG=
+DEBUG=False
 ALLOWED_HOSTS=
 ```
 
